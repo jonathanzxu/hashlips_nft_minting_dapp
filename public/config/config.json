@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x358df24b9867b85bc45b2beb5345ee30935fdc27",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/tx/0x3dfdbd77138a5d8db5bbed6d34811b36dc118c0383c7829fcda82a3f1214366c",
+  "CONTRACT_ADDRESS": "0x517a8faccca4e62ef9c70808f23294a5e517ca14",
+  "SCAN_LINK": "https://etherscan.io/address/0x517a8faccca4e62ef9c70808f23294a5e517ca14",
   "NETWORK": {
     "NAME": "Ethereum",
     "SYMBOL": "Ξ",
@@ -13,6 +13,6 @@
   "DISPLAY_COST": 0.01,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "OpenSea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/leno-test",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/genesis-moonbabes",
   "SHOW_BACKGROUND": true
 }
