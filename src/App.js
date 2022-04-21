@@ -401,9 +401,8 @@ function App() {
               color: "var(--primary-text)",
             }}
           >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
+            We have set the gas limit to {CONFIG.GAS_LIMIT} gwei for the contract to
+            successfully mint your NFT. If you lower the gas limit, you risk losing the entire gas fee if the transaction doesn't go through.
           </s.TextDescription>
         </s.Container>
       </s.Container>
