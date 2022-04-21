@@ -263,8 +263,13 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} ⇉ {data.totalSupply >= 300 ? CONFIG.DISPLAY_COST + " " + CONFIG.NETWORK.SYMBOL : "0 " + CONFIG.NETWORK.SYMBOL + " (FIRST 300 FREE)"}.
+                  Current Mint Price: 1 {CONFIG.SYMBOL} ⇉ {data.totalSupply >= 300 ? CONFIG.DISPLAY_COST + " " + CONFIG.NETWORK.SYMBOL : "0 " + CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
+                <s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  First 300 Moonbabes minted are free; Last 200 cost 0.1 {CONFIG.NETWORK.SYMBOL}.
+                </s.TextDescription>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
