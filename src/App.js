@@ -268,7 +268,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  First 300 Moonbabes minted are free; Last 200 cost 0.1 {CONFIG.NETWORK.SYMBOL}.
+                  First 300 Moonbabes minted are free; Last 200 cost 0.01 {CONFIG.NETWORK.SYMBOL}.
                 </s.TextDescription>
                 <s.SpacerXSmall />
                 <s.TextDescription
