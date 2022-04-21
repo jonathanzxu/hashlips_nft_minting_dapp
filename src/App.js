@@ -4,6 +4,7 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
+import { FaTwitter } from "react-icons/fa";
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -166,6 +167,14 @@ function App() {
       newMintAmount = 5;
     }
     setMintAmount(newMintAmount);
+  };
+
+  const openTwitter = () => {
+    window.open("https://twitter.com/moonbabes_xyz");
+  };
+
+  const openOpensea = () => {
+    window.open("https://opensea.io/collection/genesis-moonbabes");
   };
 
   const getData = () => {
@@ -367,11 +376,33 @@ function App() {
                         {claimingNft ? "BUSY" : "BUY"}
                       </StyledButton>
                     </s.Container>
+
                   </>
                 )}
               </>
             )}
             <s.SpacerMedium />
+            <s.Container ai={"center"} jc={"center"} fd={"row"}>
+              <StyledRoundButton
+                style={{
+                  padding: "5px",
+                }}
+                onClick={openTwitter}
+              >
+                <FaTwitter />
+              </StyledRoundButton>
+              <s.SpacerMedium />
+              <StyledButton
+                style={{
+                  width: "90px",
+                  "background-color": "#2081e2",
+                  color: "white",
+                }}
+                onClick={openOpensea}
+              >
+                OPENSEA
+              </StyledButton>
+            </s.Container>
           </s.Container>
           <s.SpacerLarge />
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -405,8 +436,8 @@ function App() {
             successfully mint your NFT. If you lower the gas limit, you risk losing the entire gas fee if the transaction doesn't go through.
           </s.TextDescription>
         </s.Container>
-      </s.Container>
-    </s.Screen>
+      </s.Container >
+    </s.Screen >
   );
 }
 
